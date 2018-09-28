@@ -11,11 +11,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
+    // TODO: make magento apollo client plugin
     // {
-    //   resolve: 'gatsby-plugin-apollo-shopify',
+    //   resolve: 'gatsby-plugin-apollo-magento2',
     //   options: {
-    //     shopName: process.env.GATSBY_SHOPIFY_SHOP_NAME,
-    //     accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
+    //     shopUrl: process.env.MAGENTO_STORE_URL,
+    //     accessToken: process.env.MAGENTO_STORE_AUTHORIZATION_TOKEN,
     //   },
     // },
     {
@@ -23,9 +24,9 @@ module.exports = {
       options: {
         typeName: 'Magento',
         fieldName: 'magento',
-        url: `https://magento23-beta.test/graphql`,
+        url: `https://${process.env.MAGENTO_STORE_URL}/graphql`,
         // headers: {
-        //   'X-Shopify-Storefront-Access-Token': process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
+        //   'Authorization': `Bearer ${process.env.MAGENTO_STORE_AUTHORIZATION_TOKEN},
         // },
       },
     },

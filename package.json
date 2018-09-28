@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-shopifypwa",
-  "description": "Shopify PWA starter",
+  "name": "gatsby-starter-magento2pwa",
+  "description": "Magento 2 PWA starter",
   "version": "0.0.1",
   "author": "Gil Greenberg <gilgreenberg@gmail.com>",
   "dependencies": {
@@ -22,7 +22,7 @@
   },
   "keywords": [
     "gatsby",
-    "shopify",
+    "magento",
     "pwa",
     "ecommerce"
   ],
@@ -38,6 +38,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gil--/gatsby-starter-shopifypwa"
+    "url": "https://github.com/gil--/gatsby-starter-magento2pwa"
   }
 }

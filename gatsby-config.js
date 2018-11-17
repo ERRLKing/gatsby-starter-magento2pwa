@@ -7,6 +7,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 module.exports = {
   siteMetadata: {
     title: 'Magento PWA',
+    backendUrl: `https://${process.env.MAGENTO_STORE_URL}`,
   },
   plugins: [
     `gatsby-plugin-layout`,

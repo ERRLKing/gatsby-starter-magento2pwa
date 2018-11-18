@@ -1,9 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import ProductList from '../components/ProductList'
+
 class Products extends React.Component {
     render() {
-        const products = this.props.data.magento.products
+        const products = this.props.data.magento.category.products.items
 
         return (
             <div>
@@ -27,6 +28,7 @@ query productsQuery {
             products {
                 total_count
                 items {
+                    id
                     name
                     url_key
                     image

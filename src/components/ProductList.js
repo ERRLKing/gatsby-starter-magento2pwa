@@ -3,7 +3,7 @@ import ProductBox from './ProductBox'
 
 class ProductList extends React.Component {
     render() {
-        const productList = this.props.products.items.map((product) => {
+        const productList = this.props.category.products.items.map((product) => {
             const { id, name, url_key, image, price } = product
 
             return <ProductBox

@@ -23,17 +23,20 @@ export default Products
 export const query = graphql`
 query productsQuery {
     magento {
-        products(search: "shirt") {
-            items {
-                id
-                name
-                url_key
-                image
-                price {
-                    minimalPrice {
-                        amount {
-                            value
-                            currency
+        category(id: 11) {
+            products {
+                total_count
+                items {
+                    name
+                    url_key
+                    image
+                    image_label
+                    price {
+                        minimalPrice {
+                            amount {
+                                value
+                                currency
+                            }
                         }
                     }
                 }

@@ -32,9 +32,9 @@ query productsQuery {
                     name
                     url_key
                     image {
-                        ...
+                        label
+                        url
                     }
-                    image_label
                     price {
                         minimalPrice {
                             amount {

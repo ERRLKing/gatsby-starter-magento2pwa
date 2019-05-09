@@ -20,7 +20,7 @@ class ProductBox extends React.Component {
                     render={data => (
                         <Link to={`/products/${this.props.handle}`}>
                             {this.props.images &&
-                                <img src={`${data.site.siteMetadata.backendUrl}/media/catalog/product/${this.props.images.url}`}
+                                <img src={`${data.site.siteMetadata.backendUrl}/media/catalog/product/${this.props.images}`}
                                     alt=""
                                     style={{
                                         maxWidth: '275px',

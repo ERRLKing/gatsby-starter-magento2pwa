@@ -24,7 +24,7 @@ export default Products
 export const query = graphql`
 query productsQuery {
     magento {
-        category(id: 11) {
+        category(id: 2) {
             products {
                 total_count
                 items {

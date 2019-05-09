@@ -7,7 +7,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 module.exports = {
   siteMetadata: {
     title: 'Magento PWA',
-    backendUrl: `https://${process.env.MAGENTO_STORE_URL}`,
+    backendUrl: `http://${process.env.MAGENTO_STORE_URL}`,
   },
   plugins: [
     `gatsby-plugin-layout`,
@@ -25,7 +25,7 @@ module.exports = {
       options: {
         typeName: 'Magento',
         fieldName: 'magento',
-        url: `https://${process.env.MAGENTO_STORE_URL}/graphql`,
+        url: `http://${process.env.MAGENTO_STORE_URL}/graphql`,
         // headers: {
         //   'Authorization': `Bearer ${process.env.MAGENTO_STORE_AUTHORIZATION_TOKEN},
         // },

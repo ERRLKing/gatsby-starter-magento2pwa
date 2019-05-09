@@ -10,7 +10,7 @@ class ProductList extends React.Component {
                         key={id.toString()}
                         handle={url_key}
                         title={name}
-                        images={image}
+                        images={image.url}
                         minPrice={price.minimalPrice.amount.value}
                         currencyCode={price.minimalPrice.amount.currency}
                     />

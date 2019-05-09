@@ -31,7 +31,9 @@ query productsQuery {
                     id
                     name
                     url_key
-                    image
+                    image {
+                        ...
+                    }
                     image_label
                     price {
                         minimalPrice {
